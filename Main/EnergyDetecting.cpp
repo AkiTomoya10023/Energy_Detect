@@ -18,7 +18,7 @@ cv::Point2f center;          // 中心R标位置
 bool armorDetected = false;  // 击打目标检测标识
 bool centerDetected = false; // 中心R标检测标识
 char last_mode = 0;          // 上一次模式
-long saveCount = 0;              // 保存图像命名名称计数
+long saveCount = 0;          // 保存图像命名名称计数
 
 Test_receive ser_recv; // 串口接收变量
 Test_send ser_send;    // 串口发送变量
@@ -42,7 +42,8 @@ void *energyDetectingThread(void *PARAM)
 
     // 在Linux上创建文件夹
     int status = mkdir(save_dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
-    if (status != 0) {
+    if (status != 0)
+    {
         std::cerr << "Failed to create directory." << std::endl;
     }
 
@@ -101,7 +102,10 @@ void *energyDetectingThread(void *PARAM)
         ser_recv = ser_obj.receive();
         char mode = ser_recv.mode;
 
-        predictor->setBulletSpeed(22, mode);
+        if (mode != last_mode)
+        {
+            predictor->setBulletSpeed(22, mode);
+        }
 
         // consumer gets image
         pthread_mutex_lock(&Globalmutex);
@@ -176,6 +180,9 @@ void *energyDetectingThread(void *PARAM)
         std::string img_name = img_name_ss.str();
         cv::imwrite(img_name, src);
         saveCount++;
+
+        // 保存上次模式
+        last_mode = mode;
 
         // cv::imshow("result", pre);
 

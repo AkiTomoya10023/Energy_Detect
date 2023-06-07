@@ -1,55 +1,55 @@
 Determining if the function sgemm_ exists failed with the following output:
 Change Dir: /home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_b6376/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_b6376.dir/build.make CMakeFiles/cmTC_b6376.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_aec51/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_aec51.dir/build.make CMakeFiles/cmTC_aec51.dir/build
 gmake[1]: 进入目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_b6376.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_b6376.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_b6376
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b6376.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_b6376.dir/CheckFunctionExists.c.o -o cmTC_b6376 
-/usr/bin/ld: CMakeFiles/cmTC_b6376.dir/CheckFunctionExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_aec51.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_ -o CMakeFiles/cmTC_aec51.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_aec51
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aec51.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_ CMakeFiles/cmTC_aec51.dir/CheckFunctionExists.c.o -o cmTC_aec51 
+/usr/bin/ld: CMakeFiles/cmTC_aec51.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_b6376.dir/build.make:99：cmTC_b6376] 错误 1
+gmake[1]: *** [CMakeFiles/cmTC_aec51.dir/build.make:99：cmTC_aec51] 错误 1
 gmake[1]: 离开目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-gmake: *** [Makefile:127：cmTC_b6376/fast] 错误 2
+gmake: *** [Makefile:127：cmTC_aec51/fast] 错误 2
 
 
 
 Determining if the function cheev_ exists failed with the following output:
 Change Dir: /home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ecb5d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ecb5d.dir/build.make CMakeFiles/cmTC_ecb5d.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9ef2e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9ef2e.dir/build.make CMakeFiles/cmTC_9ef2e.dir/build
 gmake[1]: 进入目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_ecb5d.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_ecb5d.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_ecb5d
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecb5d.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_ecb5d.dir/CheckFunctionExists.c.o -o cmTC_ecb5d  /usr/lib/x86_64-linux-gnu/libblas.so -lm -ldl 
-/usr/bin/ld: CMakeFiles/cmTC_ecb5d.dir/CheckFunctionExists.c.o: in function `main':
+Building C object CMakeFiles/cmTC_9ef2e.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_9ef2e.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9ef2e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9ef2e.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_9ef2e.dir/CheckFunctionExists.c.o -o cmTC_9ef2e  /usr/lib/x86_64-linux-gnu/libblas.so -lm -ldl 
+/usr/bin/ld: CMakeFiles/cmTC_9ef2e.dir/CheckFunctionExists.c.o: in function `main':
 CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
 collect2: error: ld returned 1 exit status
-gmake[1]: *** [CMakeFiles/cmTC_ecb5d.dir/build.make:100：cmTC_ecb5d] 错误 1
+gmake[1]: *** [CMakeFiles/cmTC_9ef2e.dir/build.make:100：cmTC_9ef2e] 错误 1
 gmake[1]: 离开目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-gmake: *** [Makefile:127：cmTC_ecb5d/fast] 错误 2
+gmake: *** [Makefile:127：cmTC_9ef2e/fast] 错误 2
 
 
 
 Determining if the function cheev_ exists failed with the following output:
 Change Dir: /home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_90740/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_90740.dir/build.make CMakeFiles/cmTC_90740.dir/build
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2ce99/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2ce99.dir/build.make CMakeFiles/cmTC_2ce99.dir/build
 gmake[1]: 进入目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-Building C object CMakeFiles/cmTC_90740.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_90740.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
-Linking C executable cmTC_90740
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_90740.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_90740.dir/CheckFunctionExists.c.o -o cmTC_90740  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so -fortranlibs 
+Building C object CMakeFiles/cmTC_2ce99.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_ -o CMakeFiles/cmTC_2ce99.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_2ce99
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2ce99.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_ CMakeFiles/cmTC_2ce99.dir/CheckFunctionExists.c.o -o cmTC_2ce99  /usr/lib/x86_64-linux-gnu/liblapack.so /usr/lib/x86_64-linux-gnu/libblas.so -fortranlibs 
 cc: error: unrecognized command-line option ‘-fortranlibs’
-gmake[1]: *** [CMakeFiles/cmTC_90740.dir/build.make:101：cmTC_90740] 错误 1
+gmake[1]: *** [CMakeFiles/cmTC_2ce99.dir/build.make:101：cmTC_2ce99] 错误 1
 gmake[1]: 离开目录“/home/rm/Energy_Detect/Build/CMakeFiles/CMakeTmp”
-gmake: *** [Makefile:127：cmTC_90740/fast] 错误 2
+gmake: *** [Makefile:127：cmTC_2ce99/fast] 错误 2
 
 
 
