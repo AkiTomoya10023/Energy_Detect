@@ -1,6 +1,6 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
-#include <filesystem>
+#include <sys/stat.h>
 #include <chrono>
 
 namespace fs = std::filesystem;
@@ -14,9 +14,11 @@ int main()
     ss << std::put_time(std::localtime(&current_time_t), "%Y%m%d_%H%M%S");
     std::string save_dir = "./" + ss.str();
 
-    if (!fs::exists(save_dir))
-    {
-        fs::create_directory(save_dir);
+    // 在Linux上创建文件夹
+    int status = mkdir(save_dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    if (status != 0) {
+        std::cerr << "Failed to create directory." << std::endl;
+        return 1;
     }
 
     // 初始化摄像头

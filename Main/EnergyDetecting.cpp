@@ -3,7 +3,7 @@
 #include "../Include/RunEnergy_Predictor.hpp"
 #include "../Include/RunEnergy_AngleSolve.hpp"
 #include "../Serial/Serial.hpp"
-#include <filesystem>
+#include <sys/stat.h>
 #include <chrono>
 
 std::unique_ptr<rm_power_rune::Detector> detector;       // 初始化检测器对象
@@ -40,9 +40,10 @@ void *energyDetectingThread(void *PARAM)
     ss << std::put_time(std::localtime(&current_time_t), "%Y%m%d_%H%M%S");
     std::string save_dir = "../Pictures/" + ss.str();
 
-    if (!std::filesystem::exists(save_dir))
-    {
-        std::filesystem::create_directory(save_dir);
+    // 在Linux上创建文件夹
+    int status = mkdir(save_dir.c_str(), S_IRWXU | S_IRWXG | S_IROTH | S_IXOTH);
+    if (status != 0) {
+        std::cerr << "Failed to create directory." << std::endl;
     }
 
     Serial ser_obj;
