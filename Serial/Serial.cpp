@@ -87,7 +87,7 @@ Test_receive Serial::receive()
 //    if (once == -1 || _t.sof != 0x55)
     if (once == -1)
     {
-      printf("sof:%d, robot id:%d, eof:%d\n", _t.sof, _t.robot_id, _t.eof);
+      printf("sof:%d, robot id:%d, mode:%d, eof:%d\n", _t.sof, _t.robot_id, _t.mode, _t.eof);
       cout<<"__________________****************recv failed!.....***********************"<<endl;
     }
     else
@@ -97,7 +97,7 @@ Test_receive Serial::receive()
      //cout<<"shoot_speed:"<<_test_receive.shoot_speed<<endl;
 //      _test_receive.robot_id = _t.robot_id;
       memcpy(&test_receive, &_t, sizeof(_t));
-      printf("sof:%d, robot id:%d, eof:%d\n", test_receive.sof, test_receive.robot_id, test_receive.eof);
+      printf("sof:%d, robot id:%d, mode:%d, eof:%d\n", test_receive.sof, test_receive.robot_id, test_receive.mode, test_receive.eof);
     }
 
     readCount += once;

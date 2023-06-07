@@ -3,6 +3,8 @@
 #include "../Include/RunEnergy_Predictor.hpp"
 #include "../Include/RunEnergy_AngleSolve.hpp"
 #include "../Serial/Serial.hpp"
+#include <filesystem>
+#include <chrono>
 
 std::unique_ptr<rm_power_rune::Detector> detector;       // 初始化检测器对象
 std::unique_ptr<rm_power_rune::Predictor> predictor;     // 初始化预测器对象
@@ -16,6 +18,7 @@ cv::Point2f center;          // 中心R标位置
 bool armorDetected = false;  // 击打目标检测标识
 bool centerDetected = false; // 中心R标检测标识
 char last_mode = 0;          // 上一次模式
+long saveCount = 0;              // 保存图像命名名称计数
 
 Test_receive ser_recv; // 串口接收变量
 Test_send ser_send;    // 串口发送变量
@@ -30,7 +33,18 @@ void *energyDetectingThread(void *PARAM)
     // 获取程序启动的时间点
     std::chrono::steady_clock::time_point programStartTime = std::chrono::steady_clock::now();
 
-    
+    // 创建保存图片的文件夹
+    auto current_time = std::chrono::system_clock::now();
+    auto current_time_t = std::chrono::system_clock::to_time_t(current_time);
+    std::stringstream ss;
+    ss << std::put_time(std::localtime(&current_time_t), "%Y%m%d_%H%M%S");
+    std::string save_dir = "../Pictures/" + ss.str();
+
+    if (!std::filesystem::exists(save_dir))
+    {
+        std::filesystem::create_directory(save_dir);
+    }
+
     Serial ser_obj;
     ser_obj.openPort("/dev/ttyTHS2");
     do
@@ -149,13 +163,20 @@ void *energyDetectingThread(void *PARAM)
 
                 ser_send.sof = 0xAA;
                 ser_send.eof = 0x55;
-                ser_send.yaw_angle = -(float)yaw;
-                ser_send.pitch_angle = -(float)pitch;
+                ser_send.yaw_angle = (float)yaw;
+                ser_send.pitch_angle = (float)pitch;
                 ser_obj.send(ser_send);
             }
         }
 
-        cv::imshow("result", pre);
+        // 保存图像
+        std::stringstream img_name_ss;
+        img_name_ss << save_dir << "/image" << saveCount << ".jpg";
+        std::string img_name = img_name_ss.str();
+        cv::imwrite(img_name, src);
+        saveCount++;
+
+        // cv::imshow("result", pre);
 
     } while (1);
 }

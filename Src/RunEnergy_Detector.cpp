@@ -87,13 +87,13 @@ namespace rm_power_rune
         cv::morphologyEx(bin_, bin_, cv::MORPH_CLOSE, kernel_bin);
 
         // 显示二值化结果
-        cv::imshow("bin", bin_);
+        // cv::imshow("bin", bin_);
 
         // 对预处理图像做大结构元的闭运算，填充装甲板中心
         cv::morphologyEx(bin_, pre_, cv::MORPH_CLOSE, kernel_pre);
 
         // 显示预处理结果
-        cv::imshow("pre", pre_);
+        // cv::imshow("pre", pre_);
 
         return pre_;
     }
