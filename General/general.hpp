@@ -14,6 +14,16 @@
 
 // #define DEBUG_MODE
 
+/**
+* @brief: colors in order B G R 颜色B蓝 G绿 R红
+*/
+enum Color
+{
+    BLUE = 0,
+    GREEN = 1,
+    RED = 2
+};
+
 // extern variables
 extern pthread_mutex_t Globalmutex; // threads conflict due to image-updating
 extern pthread_cond_t GlobalCondCV; // threads conflict due to image-updating
@@ -22,6 +32,7 @@ extern cv::Mat src;                 // Transfering buffer
 extern int mode;
 extern int last_mode;
 extern Test_receive ser_recv;
+extern Color enemyColor;
 
 /**
  * @brief: imageUpdating thread
@@ -38,14 +49,5 @@ void *energyDetectingThread(void *PARAM);
  */
 void *meseagesUpdatingThread(void *PARAM);
 
-/**
-* @brief: colors in order B G R 颜色B蓝 G绿 R红
-*/
-enum Color
-{
-    BLUE = 0,
-    GREEN = 1,
-    RED = 2
-};
 
 #endif // GENERAL_H

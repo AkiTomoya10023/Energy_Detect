@@ -1,5 +1,4 @@
- #include "../General/general.hpp"
-
+#include "../General/general.hpp"
 
 void *meseagesUpdatingThread(void *PARAM)
 {
@@ -10,14 +9,17 @@ void *meseagesUpdatingThread(void *PARAM)
 
     while (1)
     {
-        // 接收串口数据
-        ser_recv = ser_obj.receive();
+        if (enemyColor != GREEN)
+        {
+            // 接收串口数据
+            ser_recv = ser_obj.receive();
 
-        pthread_mutex_lock(&Globalmutex);
-        mode = ser_recv.mode; 
-        pthread_mutex_unlock(&Globalmutex);
+            pthread_mutex_lock(&Globalmutex);
+            mode = ser_recv.mode;
+            pthread_mutex_unlock(&Globalmutex);
 
-        last_mode = mode;
-        usleep(300000);
+            last_mode = mode;
+            usleep(300000);
+        }
     }
 }
