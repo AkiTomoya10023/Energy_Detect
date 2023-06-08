@@ -225,6 +225,30 @@ Main/ImageUpdating.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energy_Detect.dir/build.make CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.s
 .PHONY : Main/ImageUpdating.cpp.s
 
+Main/MeseagesUpdating.o: Main/MeseagesUpdating.cpp.o
+.PHONY : Main/MeseagesUpdating.o
+
+# target to build an object file
+Main/MeseagesUpdating.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energy_Detect.dir/build.make CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o
+.PHONY : Main/MeseagesUpdating.cpp.o
+
+Main/MeseagesUpdating.i: Main/MeseagesUpdating.cpp.i
+.PHONY : Main/MeseagesUpdating.i
+
+# target to preprocess a source file
+Main/MeseagesUpdating.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energy_Detect.dir/build.make CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.i
+.PHONY : Main/MeseagesUpdating.cpp.i
+
+Main/MeseagesUpdating.s: Main/MeseagesUpdating.cpp.s
+.PHONY : Main/MeseagesUpdating.s
+
+# target to generate assembly for a file
+Main/MeseagesUpdating.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Energy_Detect.dir/build.make CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.s
+.PHONY : Main/MeseagesUpdating.cpp.s
+
 Main/main.o: Main/main.cpp.o
 .PHONY : Main/main.o
 
@@ -366,6 +390,9 @@ help:
 	@echo "... Main/ImageUpdating.o"
 	@echo "... Main/ImageUpdating.i"
 	@echo "... Main/ImageUpdating.s"
+	@echo "... Main/MeseagesUpdating.o"
+	@echo "... Main/MeseagesUpdating.i"
+	@echo "... Main/MeseagesUpdating.s"
 	@echo "... Main/main.o"
 	@echo "... Main/main.i"
 	@echo "... Main/main.s"

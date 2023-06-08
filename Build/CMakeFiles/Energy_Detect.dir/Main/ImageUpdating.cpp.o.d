@@ -367,4 +367,28 @@ CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o: \
  /usr/include/linux/close_range.h \
  /home/rm/Energy_Detect/Main/../GxCamera/./Include/GxIAPI.h \
  /home/rm/Energy_Detect/Main/../GxCamera/./Include/DxImageProc.h \
- /home/rm/Energy_Detect/Main/../General/general.hpp
+ /home/rm/Energy_Detect/Main/../General/general.hpp \
+ /home/rm/Energy_Detect/Main/../General/../Serial/Serial.hpp \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/termios.h \
+ /usr/include/x86_64-linux-gnu/bits/termios.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/memory.h

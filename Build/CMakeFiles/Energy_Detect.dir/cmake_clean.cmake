@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o.d"
   "CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o"
   "CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o.d"
+  "CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o"
+  "CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o.d"
   "CMakeFiles/Energy_Detect.dir/Main/main.cpp.o"
   "CMakeFiles/Energy_Detect.dir/Main/main.cpp.o.d"
   "CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o"

@@ -2,7 +2,6 @@
 #include "../Include/RunEnergy_Detector.hpp"
 #include "../Include/RunEnergy_Predictor.hpp"
 #include "../Include/RunEnergy_AngleSolve.hpp"
-#include "../Serial/Serial.hpp"
 #include <sys/stat.h>
 #include <chrono>
 
@@ -17,7 +16,6 @@ cv::RotatedRect strip;       // 待击打扇叶的最小旋转矩阵
 cv::Point2f center;          // 中心R标位置
 bool armorDetected = false;  // 击打目标检测标识
 bool centerDetected = false; // 中心R标检测标识
-char last_mode = 0;          // 上一次模式
 long saveCount = 0;          // 保存图像命名名称计数
 
 Test_receive ser_recv; // 串口接收变量
@@ -99,20 +97,15 @@ void *energyDetectingThread(void *PARAM)
             }
         }
 
-        ser_recv = ser_obj.receive();
-        char mode = ser_recv.mode;
-
-        if (mode != last_mode)
-        {
-            predictor->setBulletSpeed(22, mode);
-        }
-
         // consumer gets image
         pthread_mutex_lock(&Globalmutex);
         while (!imageReadable)
         {
             pthread_cond_wait(&GlobalCondCV, &Globalmutex);
         }
+
+        // 对图像进行预处理
+        pre = detector->binarize(src);
 
         // 计算相对于程序启动时间的时间戳
         std::chrono::steady_clock::time_point currentTime = std::chrono::steady_clock::now();
@@ -121,8 +114,11 @@ void *energyDetectingThread(void *PARAM)
         imageReadable = false;
         pthread_mutex_unlock(&Globalmutex);
 
-        // 对图像进行预处理
-        pre = detector->binarize(src);
+        if (mode != last_mode)
+        {
+            predictor->setBulletSpeed(22, mode);
+        }
+        
 
         cv::cvtColor(pre, pre, cv::COLOR_GRAY2BGR);
 
@@ -180,9 +176,6 @@ void *energyDetectingThread(void *PARAM)
         std::string img_name = img_name_ss.str();
         cv::imwrite(img_name, src);
         saveCount++;
-
-        // 保存上次模式
-        last_mode = mode;
 
         // cv::imshow("result", pre);
 

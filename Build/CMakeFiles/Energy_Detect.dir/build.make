@@ -111,10 +111,24 @@ CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rm/Energy_Detect/Main/EnergyDetecting.cpp -o CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.s
 
+CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
+CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o: ../Main/MeseagesUpdating.cpp
+CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o -MF CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o -c /home/rm/Energy_Detect/Main/MeseagesUpdating.cpp
+
+CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/rm/Energy_Detect/Main/MeseagesUpdating.cpp > CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.i
+
+CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/rm/Energy_Detect/Main/MeseagesUpdating.cpp -o CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.s
+
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o: ../Src/RunEnergy_Detector.cpp
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o -MF CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o -c /home/rm/Energy_Detect/Src/RunEnergy_Detector.cpp
 
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.s: cmake_force
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o: ../Src/RunEnergy_Predictor.cpp
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o -MF CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o -c /home/rm/Energy_Detect/Src/RunEnergy_Predictor.cpp
 
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.s: cmake_force
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o: ../Src/RunEnergy_AngleSolve.cpp
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o -MF CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o -c /home/rm/Energy_Detect/Src/RunEnergy_AngleSolve.cpp
 
 CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.s: cmake_force
 CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o: ../Filter/particle_filter.cpp
 CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o -MF CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.o -c /home/rm/Energy_Detect/Filter/particle_filter.cpp
 
 CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/Energy_Detect.dir/Filter/particle_filter.cpp.s: cmake_force
 CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o: ../GxCamera/GxCamera.cpp
 CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o -MF CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o.d -o CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o -c /home/rm/Energy_Detect/GxCamera/GxCamera.cpp
 
 CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.s: cmake_force
 CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o: CMakeFiles/Energy_Detect.dir/flags.make
 CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o: ../Serial/Serial.cpp
 CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o: CMakeFiles/Energy_Detect.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o -MF CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o.d -o CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o -c /home/rm/Energy_Detect/Serial/Serial.cpp
 
 CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.i: cmake_force
@@ -200,6 +214,7 @@ Energy_Detect_OBJECTS = \
 "CMakeFiles/Energy_Detect.dir/Main/main.cpp.o" \
 "CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o" \
 "CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o" \
+"CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o" \
 "CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o" \
 "CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o" \
 "CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o" \
@@ -213,6 +228,7 @@ Energy_Detect_EXTERNAL_OBJECTS =
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Main/main.cpp.o
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o
+Energy_Detect: CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Detector.cpp.o
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Src/RunEnergy_Predictor.cpp.o
 Energy_Detect: CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o
@@ -254,7 +270,7 @@ Energy_Detect: /usr/lib/x86_64-linux-gnu/libtbb.so.12.5
 Energy_Detect: /usr/lib/x86_64-linux-gnu/liblapack.so
 Energy_Detect: /usr/lib/x86_64-linux-gnu/libblas.so
 Energy_Detect: CMakeFiles/Energy_Detect.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Energy_Detect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/rm/Energy_Detect/Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable Energy_Detect"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Energy_Detect.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

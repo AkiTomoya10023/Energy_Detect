@@ -358,6 +358,38 @@ CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o: \
  /usr/local/include/opencv4/opencv2/video.hpp \
  /usr/local/include/opencv4/opencv2/video/tracking.hpp \
  /usr/local/include/opencv4/opencv2/video/background_segm.hpp \
+ /home/rm/Energy_Detect/Main/../General/../Serial/Serial.hpp \
+ /usr/include/c++/11/fstream \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
+ /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/thread \
+ /usr/include/c++/11/bits/std_thread.h \
+ /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
+ /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
+ /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
+ /usr/include/x86_64-linux-gnu/bits/environments.h \
+ /usr/include/x86_64-linux-gnu/bits/confname.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd.h \
+ /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/termios.h \
+ /usr/include/x86_64-linux-gnu/bits/termios.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
+ /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
+ /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/memory.h \
  /home/rm/Energy_Detect/Main/../Include/RunEnergy_Detector.hpp \
  /home/rm/Energy_Detect/Main/../Include/RunEnergy_Predictor.hpp \
  /usr/local/include/ceres/ceres.h \
@@ -496,17 +528,10 @@ CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o: \
  /usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
  /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
  /usr/local/include/ceres/internal/memory.h /usr/include/glog/logging.h \
- /usr/include/unistd.h /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
- /usr/include/x86_64-linux-gnu/bits/environments.h \
- /usr/include/x86_64-linux-gnu/bits/confname.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_posix.h \
- /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
- /usr/include/x86_64-linux-gnu/bits/unistd.h \
- /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h /usr/include/inttypes.h \
- /usr/include/gflags/gflags.h /usr/include/gflags/gflags_declare.h \
- /usr/include/gflags/gflags_gflags.h /usr/include/glog/log_severity.h \
- /usr/include/glog/vlog_is_on.h /usr/local/include/ceres/types.h \
+ /usr/include/inttypes.h /usr/include/gflags/gflags.h \
+ /usr/include/gflags/gflags_declare.h /usr/include/gflags/gflags_gflags.h \
+ /usr/include/glog/log_severity.h /usr/include/glog/vlog_is_on.h \
+ /usr/local/include/ceres/types.h \
  /usr/local/include/ceres/internal/disable_warnings.h \
  /usr/local/include/ceres/internal/export.h \
  /usr/local/include/ceres/internal/reenable_warnings.h \
@@ -665,30 +690,6 @@ CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o: \
  /usr/local/include/yaml-cpp/node/parse.h \
  /usr/local/include/yaml-cpp/node/emit.h \
  /home/rm/Energy_Detect/Main/../Include/RunEnergy_AngleSolve.hpp \
- /home/rm/Energy_Detect/Main/../Serial/Serial.hpp \
- /usr/include/c++/11/fstream \
- /usr/include/x86_64-linux-gnu/c++/11/bits/basic_file.h \
- /usr/include/x86_64-linux-gnu/c++/11/bits/c++io.h \
- /usr/include/c++/11/bits/fstream.tcc /usr/include/c++/11/thread \
- /usr/include/c++/11/bits/std_thread.h \
- /usr/include/c++/11/bits/this_thread_sleep.h /usr/include/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/x86_64-linux-gnu/bits/stat.h \
- /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
- /usr/include/x86_64-linux-gnu/bits/fcntl2.h /usr/include/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios.h \
- /usr/include/x86_64-linux-gnu/bits/termios-struct.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cc.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_iflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-baud.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_cflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-c_lflag.h \
- /usr/include/x86_64-linux-gnu/bits/termios-tcflow.h \
- /usr/include/x86_64-linux-gnu/bits/termios-misc.h \
- /usr/include/x86_64-linux-gnu/sys/ttydefaults.h /usr/include/memory.h \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
  /usr/include/linux/types.h /usr/include/x86_64-linux-gnu/asm/types.h \

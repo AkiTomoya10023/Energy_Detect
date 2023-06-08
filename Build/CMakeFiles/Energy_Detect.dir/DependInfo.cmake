@@ -12,6 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/rm/Energy_Detect/GxCamera/GxCamera.cpp" "CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/GxCamera/GxCamera.cpp.o.d"
   "/home/rm/Energy_Detect/Main/EnergyDetecting.cpp" "CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Main/EnergyDetecting.cpp.o.d"
   "/home/rm/Energy_Detect/Main/ImageUpdating.cpp" "CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Main/ImageUpdating.cpp.o.d"
+  "/home/rm/Energy_Detect/Main/MeseagesUpdating.cpp" "CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Main/MeseagesUpdating.cpp.o.d"
   "/home/rm/Energy_Detect/Main/main.cpp" "CMakeFiles/Energy_Detect.dir/Main/main.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Main/main.cpp.o.d"
   "/home/rm/Energy_Detect/Serial/Serial.cpp" "CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Serial/Serial.cpp.o.d"
   "/home/rm/Energy_Detect/Src/RunEnergy_AngleSolve.cpp" "CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o" "gcc" "CMakeFiles/Energy_Detect.dir/Src/RunEnergy_AngleSolve.cpp.o.d"

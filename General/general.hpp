@@ -10,6 +10,7 @@
 #include <opencv2/opencv.hpp>
 #include <iostream>
 #include <math.h>
+#include "../Serial/Serial.hpp"
 
 // #define DEBUG_MODE
 
@@ -18,6 +19,9 @@ extern pthread_mutex_t Globalmutex; // threads conflict due to image-updating
 extern pthread_cond_t GlobalCondCV; // threads conflict due to image-updating
 extern bool imageReadable;          // threads conflict due to image-updating
 extern cv::Mat src;                 // Transfering buffer
+extern int mode;
+extern int last_mode;
+extern Test_receive ser_recv;
 
 /**
  * @brief: imageUpdating thread
@@ -28,6 +32,11 @@ void *imageUpdatingThread(void *PARAM);
  * @brief: energyDetecting thread
  */
 void *energyDetectingThread(void *PARAM);
+
+/**
+ * @brief: meseagesUpdating thread
+ */
+void *meseagesUpdatingThread(void *PARAM);
 
 /**
 * @brief: colors in order B G R 颜色B蓝 G绿 R红

@@ -21,6 +21,7 @@ add_executable(Energy_Detect
             ${PROJECT_SOURCE_DIR}/Main/main.cpp
             ${PROJECT_SOURCE_DIR}/Main/ImageUpdating.cpp
             ${PROJECT_SOURCE_DIR}/Main/EnergyDetecting.cpp
+            ${PROJECT_SOURCE_DIR}/Main/MeseagesUpdating.cpp
             ${PROJECT_SOURCE_DIR}/Src/RunEnergy_Detector.cpp
             ${PROJECT_SOURCE_DIR}/Include/RunEnergy_Detector.hpp
             ${PROJECT_SOURCE_DIR}/Src/RunEnergy_Predictor.cpp

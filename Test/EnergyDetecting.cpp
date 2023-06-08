@@ -13,7 +13,7 @@ void onTrackbar(int, void *)
 {
     // 将图像转换到HSV色彩空间
     cv::Mat frameHSV;
-    cv::cvtColor(frame, frameHSV, cv::COLOR_BGR2HSV);
+    cv::cvtColor(src, frameHSV, cv::COLOR_BGR2HSV);
 
     // 根据滑动条值创建颜色范围
     cv::Scalar lower(hueMin, satMin, valMin);
@@ -52,7 +52,7 @@ void *energyDetectingThread(void *PARAM)
         }
 
         // 展示原图片
-        cv::imshow("src", src);
+        cv::imshow("Video", src);
 
         imageReadable = false;
         pthread_mutex_unlock(&Globalmutex);
