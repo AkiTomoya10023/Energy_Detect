@@ -22,11 +22,11 @@ namespace rm_power_rune
         if (detect_color == Color::RED)
         {
             lowerb1[0] = 0;
-            lowerb1[1] = 34;
-            lowerb1[2] = 255;
+            lowerb1[1] = 0;
+            lowerb1[2] = 160;
 
             upperb1[0] = 50;
-            upperb1[1] = 255;
+            upperb1[1] = 250;
             upperb1[2] = 255;
 
             lowerb2[0] = 255;
@@ -41,10 +41,10 @@ namespace rm_power_rune
         {
             lowerb1[0] = 0;
             lowerb1[1] = 0;
-            lowerb1[2] = 255;
+            lowerb1[2] = 200;
 
             upperb1[0] = 95;
-            upperb1[1] = 134;
+            upperb1[1] = 255;
             upperb1[2] = 255;
 
             lowerb2[0] = 255;
@@ -65,7 +65,7 @@ namespace rm_power_rune
         src_ = src.clone();
 
         // 转换颜色空间
-        cv::cvtColor(src, src, cv::COLOR_BGR2HSV);
+        cv::cvtColor(src_, src_, cv::COLOR_BGR2HSV);
 
         // 根据颜色进行通道提取
         cv::Mat diff, diff1, diff2;

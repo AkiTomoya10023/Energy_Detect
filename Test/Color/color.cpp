@@ -24,22 +24,22 @@ void onTrackbar(int, void*) {
 }
 
 int main() {
-    // 打开视频文件
-    capture.open("/home/rm/Energy_Detect/能量机关视频素材（黑暗环境）/关灯-蓝方大能量机关-正在激活状态.MP4");
+    // // 打开视频文件
+    // capture.open("/home/rm/Energy_Detect/能量机关视频素材（黑暗环境）/关灯-蓝方大能量机关-正在激活状态.MP4");
 
-    if (!capture.isOpened()) {
-        std::cout << "Failed to open video file!" << std::endl;
-        return -1;
-    }
+    // if (!capture.isOpened()) {
+    //     std::cout << "Failed to open video file!" << std::endl;
+    //     return -1;
+    // }
 
-    // 获取视频的帧率
-    double frame_rate = capture.get(cv::CAP_PROP_FPS);
+    // // 获取视频的帧率
+    // double frame_rate = capture.get(cv::CAP_PROP_FPS);
 
-    // 计算每帧之间的时间间隔
-    double frame_interval = 1.0 / frame_rate;
+    // // 计算每帧之间的时间间隔
+    // double frame_interval = 1.0 / frame_rate;
 
-    // 设置延时
-    int delay = static_cast<int>(frame_interval * 1000); // 将延时转换为毫秒
+    // // 设置延时
+    // int delay = static_cast<int>(frame_interval * 1000); // 将延时转换为毫秒
 
     // 创建窗口
     cv::namedWindow("Video");
@@ -54,7 +54,7 @@ int main() {
 
     // 循环读取视频帧
     while (true) {
-        capture >> frame;
+        frame = cv::imread("/home/rm/Energy_Detect/RealRED.png");
 
         if (frame.empty()) {
             std::cout << "Video playback completed." << std::endl;
@@ -67,7 +67,7 @@ int main() {
         cv::imshow("Video", frame);
 
         // 按下空格键以暂停/继续视频播放
-        int key = cv::waitKey(delay);
+        int key = cv::waitKey(1);
         if (key == ' ') {
             cv::waitKey(0);
         }

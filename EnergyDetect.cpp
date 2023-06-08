@@ -22,14 +22,14 @@ bool centerDetected = false; // 中心R标检测标识
 int main()
 {
 
-    cv::VideoCapture cap("/home/rm/Energy_Detect/能量机关视频素材（黑暗环境）/关灯-蓝方大能量机关-正在激活状态.MP4");
+    // cv::VideoCapture cap("/home/rm/Energy_Detect/能量机关视频素材（黑暗环境）/关灯-蓝方大能量机关-正在激活状态.MP4");
 
     // 检查视频文件是否成功打开
-    if (!cap.isOpened())
-    {
-        std::cerr << "无法打开视频文件." << std::endl;
-        return -1;
-    }
+    // if (!cap.isOpened())
+    // {
+    //     std::cerr << "无法打开视频文件." << std::endl;
+    //     return -1;
+    // }
 
     // 获取视频的帧率
     double frame_rate = cap.get(cv::CAP_PROP_FPS);
@@ -41,7 +41,7 @@ int main()
     int delay = static_cast<int>(frame_interval * 1000); // 将延时转换为毫秒
 
     // 读取图像6
-    // src = cv::imread("D:\\CProject\\EnergyDetect\\RealRED.png");
+    src = cv::imread("/home/rm/Energy_Detect/RealBLUE.png");
     // cv::imshow("image", image);
 
     // 设置检测初始值
@@ -74,66 +74,66 @@ int main()
     // 提取中心R标
     // centerDetected = detector->findCenter(center);
 
-    while (1)
-    {
-        bool ret = cap.read(src);
+    // while (1)
+    // {
+    //     bool ret = cap.read(src);
 
-        if (!ret)
-            break;
+    //     if (!ret)
+    //         break;
 
-        int timeStamp = cap.get(cv::CAP_PROP_POS_MSEC);
+    //     int timeStamp = cap.get(cv::CAP_PROP_POS_MSEC);
 
-        resize(src, src, cv::Size(src.cols * 0.35, src.rows * 0.35));
+    //     resize(src, src, cv::Size(src.cols * 0.35, src.rows * 0.35));
 
-        cv::imshow("src", src);
+    //     cv::imshow("src", src);
 
-        pre = detector->binarize(src);
-        armorDetected = detector->findArmor(armor, strip);
-        centerDetected = detector->findCenter(center);
+    //     pre = detector->binarize(src);
+    //     armorDetected = detector->findArmor(armor, strip);
+    //     centerDetected = detector->findCenter(center);
 
-        cv::cvtColor(pre, pre, cv::COLOR_GRAY2BGR);
+    //     cv::cvtColor(pre, pre, cv::COLOR_GRAY2BGR);
 
-        if (armorDetected)
-        {
-            cv::drawMarker(pre, armor, cv::Scalar(0, 255, 0), cv::MARKER_CROSS, 15, 1);
-        }
-        if (centerDetected)
-        {
-            cv::drawMarker(pre, center, cv::Scalar(0, 255, 0), cv::MARKER_CROSS, 15, 1);
-        }
-        if (armorDetected && centerDetected)
-        {
-            cv::circle(pre, center, cv::norm(center - armor), cv::Scalar(0, 255, 0), 1);
+    //     if (armorDetected)
+    //     {
+    //         cv::drawMarker(pre, armor, cv::Scalar(0, 255, 0), cv::MARKER_CROSS, 15, 1);
+    //     }
+    //     if (centerDetected)
+    //     {
+    //         cv::drawMarker(pre, center, cv::Scalar(0, 255, 0), cv::MARKER_CROSS, 15, 1);
+    //     }
+    //     if (armorDetected && centerDetected)
+    //     {
+    //         cv::circle(pre, center, cv::norm(center - armor), cv::Scalar(0, 255, 0), 1);
 
-            double speed = 0;
-            cv::Point2f targetPoint;
-            predictor->speedCalculate(armor, center, timeStamp, speed);
-            if (predictor->predict(speed, timeStamp))
-            {
-                targetPoint = predictor->calcAimingAngleOffset(timeStamp, 10, armor, center);
-                cv::drawMarker(pre, targetPoint, cv::Scalar(0, 0, 255), cv::MARKER_CROSS, 15, 1);
+    //         double speed = 0;
+    //         cv::Point2f targetPoint;
+    //         predictor->speedCalculate(armor, center, timeStamp, speed);
+    //         if (predictor->predict(speed, timeStamp))
+    //         {
+    //             targetPoint = predictor->calcAimingAngleOffset(timeStamp, 10, armor, center);
+    //             cv::drawMarker(pre, targetPoint, cv::Scalar(0, 0, 255), cv::MARKER_CROSS, 15, 1);
 
-                cv::Point2f rectPoints[4];
-                strip.points(rectPoints);
+    //             cv::Point2f rectPoints[4];
+    //             strip.points(rectPoints);
 
-                std::vector<cv::Point2f> points;
-                for (int i = 0; i < 4; i++)
-                {
-                    points.push_back(rectPoints[i]);
-                }
+    //             std::vector<cv::Point2f> points;
+    //             for (int i = 0; i < 4; i++)
+    //             {
+    //                 points.push_back(rectPoints[i]);
+    //             }
 
-                double yaw = 0, pitch = 0, distance = 0;
-                angleSolver->getAngle(points, targetPoint, yaw, pitch, distance);
+    //             double yaw = 0, pitch = 0, distance = 0;
+    //             angleSolver->getAngle(points, targetPoint, yaw, pitch, distance);
 
-                cout << "yaw:" << yaw << endl;
-                cout << "pitch:" << pitch << endl;
-            }
-        }
+    //             cout << "yaw:" << yaw << endl;
+    //             cout << "pitch:" << pitch << endl;
+    //         }
+    //     }
 
-        cv::imshow("result", pre);
+    //     cv::imshow("result", pre);
 
-        cv::waitKey(delay);
-    }
+    //     cv::waitKey(delay);
+    // }
 
     cv::waitKey(0);
 
